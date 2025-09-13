@@ -8,7 +8,7 @@ const SearchBar = () => {
 
   const handleSearch = (e:React.FormEvent <HTMLFormElement>) => {
       e.preventDefault();
-       const formData = new FormData(e.currentTarget);
+      const formData = new FormData(e.currentTarget);
       const name = formData.get('name') as string;
 
       if(name){
